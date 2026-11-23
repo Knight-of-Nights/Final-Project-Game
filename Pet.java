@@ -20,6 +20,12 @@ public class Pet
     
       public void feed()
         {
+          if (Hunger < 250) {
+            Hunger += 10;
+            System.out.println("New Hunger Level is: " + Hunger);
+          } else {
+            System.out.println("You are too full to eat more.");
+          }
         Hunger += 10;
          System.out.println("New Hunger Level is: " + Hunger);
         }
@@ -30,11 +36,23 @@ public class Pet
         }
       public void entertainment()
         {
+        if (Joy < 100) {
+            Joy += 10;
+            System.out.println("New Joy Level is: " + Joy);
+          } else {
+            System.out.println("You are already very happy.");
+          }
         Joy += 10;
          System.out.println("New Joy Level is: " + Joy);
         }
       public void sleep()
         {
+          if (Sleep < 100) {
+            Sleep += 10;
+            System.out.println("New Sleep Level is: " + Sleep);
+          } else {
+            System.out.println("You are already well rested.");
+          }
         Sleep += 100;
          System.out.println("New Sleep Level is: " + Sleep);
         }

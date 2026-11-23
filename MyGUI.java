@@ -11,6 +11,8 @@ public class MyGUI extends JFrame {
     // add GUI components as instance variables
     JLabel imageLabel = new JLabel("Dog");
     Pet p = new Pet();
+    Food f = new Food();
+    f.getFood();
     JButton button1 = new JButton("Feed");
     JLabel output1 = new JLabel("Hunger");
     //Create a timer to do something every x milliseconds 
