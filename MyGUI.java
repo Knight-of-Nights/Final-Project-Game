@@ -42,7 +42,9 @@ public class MyGUI extends JFrame {
         
         
         // set up GUI
-    
+
+    JButton button1 = new JButton("Hunger");
+    JLabel output1 = new JLabel("Feed");
     add(output1);
     add(button1);
     button1.addActionListener(new ActionListener() {
