@@ -54,26 +54,37 @@ public class MyGUI extends JFrame {
         output1.setText("Hunger" + p.getHunger());
     }
 }); 
-    JButton button2 = new JButton("Play");
-    JLabel output2 = new JLabel("Joy");
+    JButton button2 = new JButton("Hunger");
+    JLabel output2 = new JLabel("Feed");
     add(output2);
     add(button2);
     button2.addActionListener(new ActionListener() {
     public void actionPerformed(ActionEvent e)  {
         // what to do on click
         p.feed();
-        output2.setText("Joy" + p.getHunger());
+        output2.setText("Hunger" + p.getHunger());
     }
-});
-    JButton button3 = new JButton("Sleep");
-    JLabel output3 = new JLabel("Sleep");
+}); 
+    JButton button3 = new JButton("Play");
+    JLabel output3 = new JLabel("Joy");
     add(output3);
     add(button3);
     button3.addActionListener(new ActionListener() {
     public void actionPerformed(ActionEvent e)  {
         // what to do on click
         p.feed();
-        output3.setText("Sleep" + p.getHunger());
+        output3.setText("Joy" + p.getHunger());
+    }
+});
+    JButton button4 = new JButton("Sleep");
+    JLabel output4 = new JLabel("Sleep");
+    add(output4);
+    add(button4);
+    button3.addActionListener(new ActionListener() {
+    public void actionPerformed(ActionEvent e)  {
+        // what to do on click
+        p.feed();
+        output4.setText("Sleep" + p.getHunger());
     }
 });
 
